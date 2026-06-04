@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Full Stack Engineer specializing in Angular, .NET, and Azure — frontend-focused with backend depth.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="John Galloway">
+
+  <meta property="og:title" content="John Galloway | Full Stack Engineer">
+  <meta property="og:description" content="Full Stack Engineer specializing in Angular, .NET, and Azure — frontend-focused with backend depth.">
+  <meta property="og:type" content="website">
+
+  <title>John Galloway | Full Stack Engineer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header id="nav" role="banner">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo" aria-label="John Galloway — home">John Galloway<span> - </span>Full Stack Engineer</a>
+
+        <nav aria-label="Primary navigation">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#db-specialty">Database</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="/assets/Galloway_Resume_2026.pdf" class="btn-resume" download aria-label="Download resume as PDF">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                  <polyline points="7 10 12 15 17 10"/>
+                  <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                Resume
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#db-specialty">Database</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+    <a href="/assets/Galloway_Resume_2026.pdf" download>Download Resume</a>
+  </nav>
+
+  <main>
+
+    <section id="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-content fade-up">
+            <p class="hero-eyebrow">Hello, I'm</p>
+            <h1 class="hero-name" id="hero-heading">John Galloway</h1>
+            <p class="hero-title">Full Stack Engineer</p>
+            <p class="hero-tagline">&ldquo;Frontend-focused with backend depth&rdquo;</p>
+            <div class="hero-cta">
+              <a href="#projects" class="btn-primary">View Work</a>
+              <a href="#contact" class="btn-secondary">Contact Me</a>
+            </div>
+            <div class="hero-stack">
+              <span class="hero-stack-badge">Angular</span>
+              <span class="hero-stack-badge">.NET</span>
+              <span class="hero-stack-badge">C#</span>
+              <span class="hero-stack-badge">Azure</span>
+              <span class="hero-stack-badge">SQL Server</span>
+            </div>
+          </div>
+          <div class="hero-avatar fade-up" style="transition-delay: 0.15s">
+            <img class="avatar-circle" src="/assets/images/Headshot.png" alt="John Galloway">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-label">About</span>
+          <h2 class="section-title" id="about-heading">Who I Am</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-bio fade-up">
+            <p>
+              I'm a Full Stack Engineer with around four years of experience building enterprise-grade web applications. My work sits at the intersection of clean, responsive frontends and solid, maintainable backends — I care about both, and I care especially about the seams between them.
+            </p>
+            <p>
+              My background spans Angular (14 through 19), .NET Core, SQL Server, and cloud infrastructure on Azure. I've built customer-facing tools for the mortgage industry, modernized tax and tariff systems for import/export operations, and automated IT workflows that used to eat hours every week.
+            </p>
+            <p>
+              I started my career in IT support, and before that I was a trombone performance major and instrument repair technician. Those backgrounds shaped how I work more than I expected: I debug patiently, communicate clearly across technical and non-technical audiences, and I know how to make a complex system make sense to the person who has to use it every day.
+            </p>
+            <p>
+              Right now I'm especially interested in modernizing legacy systems, making complex data legible to end users, and writing code that holds up under real production load — not just in demos.
+            </p>
+          </div>
+
+          <div class="about-highlights fade-up" style="transition-delay: 0.1s">
+            <div class="highlight-item">
+              <div class="highlight-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2"/>
+                  <path d="M8 21h8M12 17v4"/>
+                </svg>
+              </div>
+              <div class="highlight-text">
+                <h4>Enterprise Applications</h4>
+                <p>Production features shipped for mortgage lenders and customs brokerage platforms.</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+                </svg>
+              </div>
+              <div class="highlight-text">
+                <h4>Cloud &amp; DevOps</h4>
+                <p>Azure infrastructure, CI/CD pipelines, and observability via Dynatrace and Grafana.</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                </svg>
+              </div>
+              <div class="highlight-text">
+                <h4>Database Engineering</h4>
+                <p>Deep SQL Server expertise — schema design, query optimization, and data modeling at scale.</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="23 4 23 10 17 10"/>
+                  <polyline points="1 20 1 14 7 14"/>
+                  <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
+                </svg>
+              </div>
+              <div class="highlight-text">
+                <h4>Legacy Modernization</h4>
+                <p>Experienced in incrementally upgrading older systems without breaking what works.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-label">Technical Skills</span>
+          <h2 class="section-title" id="skills-heading">What I Work With</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-category fade-up">
+            <p class="skill-category-title">Languages</p>
+            <div class="tag-group">
+              <span class="tag">TypeScript</span>
+              <span class="tag">C# 10–13</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">SQL</span>
+            </div>
+          </div>
+
+          <div class="skill-category fade-up" style="transition-delay: 0.05s">
+            <p class="skill-category-title">Frameworks &amp; Libraries</p>
+            <div class="tag-group">
+              <span class="tag">Angular 14–19</span>
+              <span class="tag">.NET 6–10</span>
+              <span class="tag">ASP.NET MVC</span>
+              <span class="tag">Entity Framework Core</span>
+              <span class="tag">RxJS</span>
+            </div>
+          </div>
+
+          <div class="skill-category fade-up" style="transition-delay: 0.1s">
+            <p class="skill-category-title">Cloud &amp; DevOps</p>
+            <div class="tag-group">
+              <span class="tag">Azure</span>
+              <span class="tag">Azure DevOps</span>
+              <span class="tag">App Services</span>
+              <span class="tag">App Insights</span>
+              <span class="tag">Service Bus</span>
+              <span class="tag">Key Vault</span>
+              <span class="tag">Function Apps</span>
+              <span class="tag">Azure SQL</span>
+              <span class="tag">Azure Monitor</span>
+              <span class="tag">Entra ID</span>
+              <span class="tag">Dynatrace</span>
+              <span class="tag">Grafana</span>
+              <span class="tag tag-neutral">AWS (familiar)</span>
+            </div>
+          </div>
+
+          <div class="skill-category fade-up" style="transition-delay: 0.15s">
+            <p class="skill-category-title">Databases</p>
+            <div class="tag-group">
+              <span class="tag">SQL Server</span>
+            </div>
+          </div>
+
+          <div class="skill-category fade-up" style="transition-delay: 0.2s">
+            <p class="skill-category-title">Architecture</p>
+            <div class="tag-group">
+              <span class="tag">RESTful APIs</span>
+              <span class="tag">Microservices</span>
+              <span class="tag">Layered Architecture</span>
+              <span class="tag">Clean Architecture</span>
+            </div>
+          </div>
+
+          <div class="skill-category fade-up" style="transition-delay: 0.25s">
+            <p class="skill-category-title">Tools &amp; Methodologies</p>
+            <div class="tag-group">
+              <span class="tag">Git</span>
+              <span class="tag">Docker</span>
+              <span class="tag">RabbitMQ</span>
+              <span class="tag">CI/CD Pipelines</span>
+              <span class="tag">Jira Administration</span>
+              <span class="tag">ServiceNow</span>
+              <span class="tag">Agile / Scrum</span>
+              <span class="tag">System Design</span>
+              <span class="tag">Workflow Automation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="db-specialty" aria-labelledby="db-heading">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-label">Specialty</span>
+          <h2 class="section-title" id="db-heading">Database Engineering</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="db-inner">
+          <div class="db-description fade-up">
+            <p>
+              Data layer work is where I invest extra care. Getting the schema right, the queries fast, and the business logic cleanly expressed through the data model is what separates a system that scales from one that becomes a production incident.
+            </p>
+            <p>
+              I work primarily in SQL Server, with deep experience in schema design, query optimization, indexing strategy, and translating complex business rules into data models that stay maintainable as requirements change. Entity Framework Core is my primary ORM — I know when to lean on it and when to write raw SQL instead.
+            </p>
+            <p>
+              One of the more demanding projects I've worked on was a closing disclosure viewer built for a major mortgage lender. The tool integrated over 3,000 discrete data fields across a tightly regulated document type, with strict conditional logic governing what could appear under which circumstances. That kind of work demands precise data modeling, rigorous validation at the data layer, and clean APIs that shield the frontend from that complexity entirely.
+            </p>
+          </div>
+
+          <div class="db-cards fade-up" style="transition-delay: 0.1s">
+            <div class="db-card">
+              <h4>Schema Design &amp; Data Modeling</h4>
+              <p>Designing normalized schemas that reflect real business domains, with an eye toward future query patterns and evolution.</p>
+            </div>
+            <div class="db-card">
+              <h4>Query Optimization</h4>
+              <p>Profiling slow queries, reading execution plans, and applying indexing strategies that actually move the needle.</p>
+            </div>
+            <div class="db-card">
+              <h4>Entity Framework Core</h4>
+              <p>Fluent API configuration, migration management, and knowing when to reach for Dapper or raw SQL for performance-critical paths.</p>
+            </div>
+            <div class="db-card">
+              <h4>Complex Business Logic at the Data Layer</h4>
+              <p>Encapsulating intricate conditional rules so the application tier stays clean — demonstrated at scale with 3,000+ field integrations for a production mortgage platform.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-label">Projects</span>
+          <h2 class="section-title" id="projects-heading">Selected Work</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card fade-up">
+            <div class="project-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                <line x1="12" y1="22.08" x2="12" y2="12"/>
+              </svg>
+            </div>
+            <h3 class="project-title">Customs Drawback Platform</h3>
+            <p class="project-desc">
+              Modernization of a tax and tariff drawback system for import/export operations. Rebuilt legacy workflows into a maintainable, scalable architecture with a modern Angular frontend and a clean .NET backend.
+            </p>
+            <div class="project-stack">
+              <span class="stack-tag">Angular 19</span>
+              <span class="stack-tag">.NET 10</span>
+              <span class="stack-tag">SQL Server</span>
+              <span class="stack-tag">Azure DevOps</span>
+            </div>
+            <a href="#" class="project-link" aria-label="View Customs Drawback Platform project details">
+              View Project
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </a>
+          </article>
+
+          <article class="project-card fade-up" style="transition-delay: 0.1s">
+            <div class="project-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+            <h3 class="project-title">Mortgage Document Portal</h3>
+            <p class="project-desc">
+              Responsive web applications built for a major mortgage lender, including a closing disclosure viewer integrating 3,000+ fields with complex business logic for title company use.
+            </p>
+            <div class="project-stack">
+              <span class="stack-tag">Angular 14–16</span>
+              <span class="stack-tag">.NET Core 6–8</span>
+              <span class="stack-tag">SQL Server</span>
+              <span class="stack-tag">Azure DevOps</span>
+            </div>
+            <a href="#" class="project-link" aria-label="View Mortgage Document Portal project details">
+              View Project
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </a>
+          </article>
+
+          <article class="project-card fade-up" style="transition-delay: 0.2s">
+            <div class="project-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="4 17 10 11 4 5"/>
+                <line x1="12" y1="19" x2="20" y2="19"/>
+              </svg>
+            </div>
+            <h3 class="project-title">IT Automation Scripts</h3>
+            <p class="project-desc">
+              Python automation suite that reduced manual IT operations and streamlined ServiceNow workflows, cutting ticket resolution time and eliminating repetitive steps across the support team.
+            </p>
+            <div class="project-stack">
+              <span class="stack-tag">Python</span>
+              <span class="stack-tag">ServiceNow</span>
+            </div>
+            <a href="#" class="project-link" aria-label="View IT Automation Scripts project details">
+              View Project
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" aria-labelledby="experience-heading">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-label">Experience</span>
+          <h2 class="section-title" id="experience-heading">Work History</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item fade-up">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <p class="timeline-period">Feb 2025 – Mar 2026</p>
+            <p class="timeline-role">Full Stack Engineer</p>
+            <p class="timeline-company">TEKsystems <span class="timeline-client">(Client: Alpha Consulting)</span></p>
+            <p class="timeline-desc">
+              Supported modernization of a customs brokerage platform handling tax and tariff drawback processing for import/export operations using Angular 19, .NET 10, and SQL Server. Managed Azure App Services for test environment deployments, executed releases through Azure DevOps Pipelines and Boards, and enhanced API design and data integration to ensure reliable communication between services.
+            </p>
+          </div>
+
+          <div class="timeline-item fade-up" style="transition-delay: 0.08s">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <p class="timeline-period">Nov 2024 – Feb 2025</p>
+            <p class="timeline-role">Application Administrator — Platform/DevOps Team</p>
+            <p class="timeline-company">H&amp;E Equipment Services</p>
+            <p class="timeline-desc">
+              Managed Azure and Azure DevOps infrastructure, executing deployments and supporting development and release workflows. Monitored platform health via Azure Monitor and Application Insights, managed access control in Entra ID with RBAC, and served as Jira Administrator maintaining project structures and automations.
+            </p>
+          </div>
+
+          <div class="timeline-item fade-up" style="transition-delay: 0.16s">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <p class="timeline-period">Aug 2022 – Sep 2024</p>
+            <p class="timeline-role">Full Stack Engineer</p>
+            <p class="timeline-company">Veterans United Home Loans</p>
+            <p class="timeline-desc">
+              Built and shipped customer-facing mortgage tools, extended three RESTful APIs, and delivered production features across multiple Agile sprints. Key work included a closing disclosure viewer integrating 3,000+ data fields with conditional business logic encoded at the data layer.
+            </p>
+          </div>
+
+          <div class="timeline-item fade-up" style="transition-delay: 0.24s">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <p class="timeline-period">Nov 2020 – Aug 2022</p>
+            <p class="timeline-role">IT Support Technician</p>
+            <p class="timeline-company">Veterans United Home Loans</p>
+            <p class="timeline-desc">
+              Wrote Python scripts to automate IT operations and streamline ServiceNow workflows, reducing manual effort on routine tasks. Also maintained knowledge base articles and improved ticketing criteria — work that built the systematic thinking and communication habits I still rely on daily.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" aria-labelledby="education-heading">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-label">Education</span>
+          <h2 class="section-title" id="education-heading">Background</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="education-grid">
+          <div class="edu-card fade-up">
+            <p class="edu-year">2022</p>
+            <p class="edu-degree">Full Stack Web Development Certificate</p>
+            <p class="edu-school">University of Missouri</p>
+          </div>
+          <div class="edu-card fade-up" style="transition-delay: 0.07s">
+            <p class="edu-year">2020</p>
+            <p class="edu-degree">Google IT Support Professional Certificate</p>
+            <p class="edu-school">Coursera</p>
+          </div>
+          <div class="edu-card fade-up" style="transition-delay: 0.14s">
+            <p class="edu-year">2015</p>
+            <p class="edu-degree">A.S. in Instrument Repair</p>
+            <p class="edu-school">Minnesota State College, Red Wing</p>
+          </div>
+          <div class="edu-card fade-up" style="transition-delay: 0.21s">
+            <p class="edu-year">2011</p>
+            <p class="edu-degree">B.F.A. in Trombone Performance</p>
+            <p class="edu-school">Marshall University</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-label">Contact</span>
+          <h2 class="section-title" id="contact-heading">Get in Touch</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-inner">
+          <div class="contact-info fade-up">
+            <h3>Let&rsquo;s talk.</h3>
+            <p>
+              Whether you have a role in mind, a project to discuss, or just want to connect — I&rsquo;m happy to hear from you. I typically respond within a day or two.
+            </p>
+            <a href="mailto:jgdevcraft@gmail.com" class="contact-email-link" aria-label="Send email to jgdevcraft@gmail.com">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              jgdevcraft@gmail.com
+            </a>
+          </div>
+
+          <div class="fade-up" style="transition-delay: 0.1s">
+            <form
+              id="contact-form"
+              class="contact-form"
+              action="https://formspree.io/f/YOUR_FORM_ID"
+              method="POST"
+              novalidate
+              aria-label="Contact form"
+            >
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name">Name</label>
+                  <input type="text" id="contact-name" name="name" autocomplete="name" required placeholder="Your name" aria-required="true">
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Email</label>
+                  <input type="email" id="contact-email" name="email" autocomplete="email" required placeholder="your@email.com" aria-required="true">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" required placeholder="What's on your mind?" aria-required="true"></textarea>
+              </div>
+              <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+              <button type="submit" id="form-submit" class="btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">&copy; 2026 John Galloway. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="https://linkedin.com/in/jgdevcraft" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
