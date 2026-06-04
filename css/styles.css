@@ -899,8 +899,8 @@ footer {
   .hero-cta { justify-content: center; }
 
   .avatar-circle {
-    width: 390px;
-    height: 390px;
+    width: 200px;
+    height: 200px;
   }
 
   .form-row { grid-template-columns: 1fr; }
