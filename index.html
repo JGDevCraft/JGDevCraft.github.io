@@ -29,7 +29,7 @@
           <ul class="nav-links">
             <li><a href="#skills">Skills</a></li>
             <li><a href="#db-specialty">Database</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <!-- <li><a href="#projects">Projects</a></li> -->
             <li><a href="#experience">Experience</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -62,7 +62,7 @@
   <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
     <a href="#skills">Skills</a>
     <a href="#db-specialty">Database</a>
-    <a href="#projects">Projects</a>
+    <!-- <a href="#projects">Projects</a> -->
     <a href="#experience">Experience</a>
     <a href="#education">Education</a>
     <a href="#contact">Contact</a>
@@ -80,7 +80,8 @@
             <p class="hero-title">Full Stack Engineer</p>
             <p class="hero-tagline">&ldquo;Frontend-focused with backend depth&rdquo;</p>
             <div class="hero-cta">
-              <a href="#projects" class="btn-primary">View Work</a>
+              <!-- <a href="#projects" class="btn-primary">View Work</a> -->
+              <a href="#experience" class="btn-primary">Work History</a>
               <a href="#contact" class="btn-secondary">Contact Me</a>
             </div>
             <div class="hero-stack">
@@ -102,7 +103,7 @@
               I'm a Full Stack Engineer with around four years of experience building enterprise-grade web applications. My work sits at the intersection of clean, responsive frontends and solid, maintainable backends. I care about both, and I care especially about the seams between them.
             </p>
             <p>
-              My background spans Angular (14 through 19), .NET Core (6 through 8), SQL Server, and cloud infrastructure on Azure. I've built customer-facing tools for the mortgage industry, modernized tax and tariff systems for import/export operations, and automated IT workflows that used to eat hours every week.
+              My background spans Angular 14–19, .NET 6–10, SQL Server, and cloud infrastructure on Azure. I've built customer-facing tools for the mortgage industry, modernized tax and tariff systems for import/export operations, and automated IT workflows that used to eat hours every week.
             </p>
             <p>
               I started my career in IT support, and before that I was a trombone performance major and instrument repair technician. Those backgrounds shaped how I work more than I expected: I debug patiently, communicate clearly across technical and non-technical audiences, and I know how to make a complex system make sense to the person who has to use it every day.
@@ -180,7 +181,7 @@
             <p class="skill-category-title">Languages</p>
             <div class="tag-group">
               <span class="tag">TypeScript</span>
-              <span class="tag">C# 10–13</span>
+              <span class="tag">C# 10–14</span>
               <span class="tag">JavaScript</span>
               <span class="tag">SQL</span>
             </div>
@@ -216,9 +217,13 @@
           </div>
 
           <div class="skill-category fade-up" style="transition-delay: 0.15s">
-            <p class="skill-category-title">Databases</p>
+            <p class="skill-category-title">Data Layer</p>
             <div class="tag-group">
               <span class="tag">SQL Server</span>
+              <span class="tag">Azure SQL</span>
+              <span class="tag">T-SQL</span>
+              <span class="tag">Entity Framework Core</span>
+              <span class="tag">Dapper</span>
             </div>
           </div>
 
@@ -293,6 +298,7 @@
       </div>
     </section>
 
+    <!-- PROJECTS SECTION — commented out until real projects are ready
     <section id="projects" aria-labelledby="projects-heading">
       <div class="container">
         <div class="section-header fade-up">
@@ -342,7 +348,7 @@
             </p>
             <div class="project-stack">
               <span class="stack-tag">Angular 14–16</span>
-              <span class="stack-tag">.NET Core 6–8</span>
+              <span class="stack-tag">.NET 6–8</span>
               <span class="stack-tag">SQL Server</span>
               <span class="stack-tag">Azure DevOps</span>
             </div>
@@ -381,6 +387,7 @@
         </div>
       </div>
     </section>
+    END PROJECTS SECTION -->
 
     <section id="experience" aria-labelledby="experience-heading">
       <div class="container">
@@ -481,20 +488,34 @@
             <p>
               Whether you have a role in mind, a project to discuss, or just want to connect. I&rsquo;m happy to hear from you. I typically respond within a day or two.
             </p>
-            <a href="mailto:jgdevcraft@gmail.com" class="contact-email-link" aria-label="Send email to jgdevcraft@gmail.com">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                <polyline points="22,6 12,13 2,6"/>
-              </svg>
-              jgdevcraft@gmail.com
-            </a>
+            <div class="contact-links">
+              <a href="mailto:jgdevcraft@gmail.com" class="contact-link" aria-label="Send email to jgdevcraft@gmail.com">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                jgdevcraft@gmail.com
+              </a>
+              <a href="https://github.com/JGDevCraft/" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="GitHub profile">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                </svg>
+                github.com/JGDevCraft
+              </a>
+              <a href="https://linkedin.com/in/jgdevcraft" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="LinkedIn profile">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+                linkedin.com/in/jgdevcraft
+              </a>
+            </div>
           </div>
 
           <div class="fade-up" style="transition-delay: 0.1s">
             <form
               id="contact-form"
               class="contact-form"
-              action="https://formspree.io/f/YOUR_FORM_ID"
+              action="https://formspree.io/f/xrevqgwd"
               method="POST"
               novalidate
               aria-label="Contact form"
@@ -513,6 +534,7 @@
                 <label for="contact-message">Message</label>
                 <textarea id="contact-message" name="message" required placeholder="What's on your mind?" aria-required="true"></textarea>
               </div>
+              <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
               <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
               <button type="submit" id="form-submit" class="btn-primary">Send Message</button>
             </form>
@@ -533,7 +555,7 @@
               <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
             </svg>
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+          <a href="https://github.com/JGDevCraft/" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
             </svg>
