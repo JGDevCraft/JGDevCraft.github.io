@@ -275,17 +275,23 @@ section {
 
 /* Hero */
 #hero {
-  min-height: calc(100vh - var(--nav-height));
-  display: flex;
-  align-items: center;
   padding: 5rem 0 4rem;
 }
 
 .hero-inner {
   display: flex;
   align-items: center;
-  gap: 2rem;
-  width: 80%;
+  gap: 3rem;
+}
+
+.hero-about {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 4rem;
+  margin-top: 4rem;
+  padding-top: 3.5rem;
+  border-top: 1px solid var(--border);
+  align-items: start;
 }
 
 .hero-content { flex: 1; }
@@ -304,14 +310,14 @@ section {
   letter-spacing: -0.03em;
   color: var(--text);
   line-height: 1.1;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
 }
 
 .hero-title {
   font-size: clamp(1rem, 2.5vw, 1.3rem);
   font-weight: 400;
   color: var(--text-muted);
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
 }
 
 .hero-tagline {
@@ -319,7 +325,7 @@ section {
   color: var(--teal);
   font-style: italic;
   font-weight: 500;
-  margin-bottom: 2.25rem;
+  margin-bottom: 1.5rem;
 }
 
 .hero-cta {
@@ -360,15 +366,7 @@ section {
   display: block;
 }
 
-/* About */
-#about { background: #fff; }
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: start;
-}
+/* About — reused inside hero-about */
 
 .about-bio {
   font-size: 1rem;
@@ -877,7 +875,7 @@ footer {
 
 /* Tablet */
 @media (max-width: 900px) {
-  .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .hero-about { grid-template-columns: 1fr; gap: 2.5rem; }
   .skills-grid { grid-template-columns: 1fr; }
   .db-inner { grid-template-columns: 1fr; gap: 2.5rem; }
   .contact-inner { grid-template-columns: 1fr; gap: 2.5rem; }
