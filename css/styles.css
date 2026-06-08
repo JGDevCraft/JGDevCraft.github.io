@@ -275,6 +275,7 @@ section {
 
 /* Hero */
 #hero {
+  background: var(--bg-card);
   padding: 5rem 0 4rem;
 }
 
@@ -688,7 +689,13 @@ section {
 }
 
 /* Education */
-#education { background: #fff; }
+#education {
+  background: var(--text);
+}
+
+#education .section-label { color: var(--teal); }
+#education .section-title { color: #fff; }
+#education .section-divider { background: var(--teal); }
 
 .education-grid {
   display: grid;
@@ -697,16 +704,16 @@ section {
 }
 
 .edu-card {
-  background: var(--bg);
+  background: rgba(255, 255, 255, 0.05);
   border-radius: var(--radius-lg);
   padding: 1.5rem;
-  border: 1px solid var(--border);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   transition: border-color var(--transition), box-shadow var(--transition);
 }
 
 .edu-card:hover {
-  border-color: rgba(42, 157, 143, 0.4);
-  box-shadow: var(--shadow);
+  border-color: rgba(42, 157, 143, 0.5);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .edu-year {
@@ -721,14 +728,14 @@ section {
 .edu-degree {
   font-size: 0.9375rem;
   font-weight: 700;
-  color: var(--text);
+  color: #fff;
   line-height: 1.35;
   margin-bottom: 0.25rem;
 }
 
 .edu-school {
   font-size: 0.875rem;
-  color: var(--text-muted);
+  color: rgba(255, 255, 255, 0.65);
 }
 
 /* Contact */
@@ -895,6 +902,7 @@ footer {
   }
 
   .hero-cta { justify-content: center; }
+  .hero-stack { justify-content: center; }
 
   .avatar-circle {
     width: 200px;
